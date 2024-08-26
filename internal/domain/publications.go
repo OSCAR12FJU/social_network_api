@@ -1,4 +1,4 @@
-package model
+package domain
 
 import (
 	"time"
@@ -9,6 +9,6 @@ import (
 type Publication struct {
 	Publication_id primitive.ObjectID `bson:"publication_id,omitempty"`
 	Content        string             `bson:"content"`
-	Followed       string             `bson:"followed"`
+	Follower       string             `bson:"follower"`
 	CreatedAt      time.Time          `bson:"created_at"`
 }
